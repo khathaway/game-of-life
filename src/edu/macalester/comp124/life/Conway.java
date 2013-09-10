@@ -23,11 +23,11 @@ public class Conway implements RuleSet {
             return false;
         } else if ((isAlive) && (neighborCount > 3)) {
             return false;
-        } else if ((isAlive) && (neighborCount == 3 || neighborCount == 2)) {
+        } else if ((isAlive) && (neighborCount == 2)) {
             return true;
         } else if ((!isAlive) && (neighborCount != 3)) {
             return false;
-        } else if (neighborCount == 3) {
+        } else if (neighborCount ==3) {
             return true;
         } else
             return false;
